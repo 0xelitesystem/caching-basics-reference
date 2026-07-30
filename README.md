@@ -8,15 +8,19 @@ Caching is storing a copy of a computed or fetched result so future requests can
 
 ## What is inside
 
-- `01-what-caching-is.md` what a cache is, hits and misses, and why caching pays off.
-- `02-cache-layers.md` the browser, CDN, application, and database cache layers and what each one does.
-- `03-cache-control-and-ttl.md` cache-control headers, TTL, and how HTTP freshness is negotiated.
-- `04-invalidation.md` strategies for removing or refreshing stale cache entries.
-- `05-stampede-and-when-not-to-cache.md` cache stampede, mitigations, and when caching does more harm than good.
+- [01-what-caching-is.md](01-what-caching-is.md) what a cache is, hits and misses, and why caching pays off.
+- [02-cache-layers.md](02-cache-layers.md) the browser, CDN, application, and database cache layers and what each one does.
+- [03-cache-control-and-ttl.md](03-cache-control-and-ttl.md) cache-control headers, TTL, and how HTTP freshness is negotiated.
+- [04-invalidation.md](04-invalidation.md) strategies for removing or refreshing stale cache entries.
+- [05-stampede-and-when-not-to-cache.md](05-stampede-and-when-not-to-cache.md) cache stampede, mitigations, and when caching does more harm than good.
 
 ## The stance
 
 Caching is one of the highest-leverage performance tools you have, and also one of the easiest to get subtly wrong. This reference treats freshness as a contract you choose on purpose, not a default you inherit by accident. Reach for caching when the work is expensive and the data tolerates being slightly old, and skip it when correctness is non-negotiable or the data changes faster than you can serve it.
+
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
 
 ## License
 
